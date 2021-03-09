@@ -1,0 +1,314 @@
+{
+        "hyper_params": {
+                        "lr": 0.001,
+                        "embed_dim": 300,
+                        "hidden_dim": 300, 
+                        "optimizer": "adam",
+                        "cuda": 2,
+                        "tensorlog_path": "tensor_logs/enwik8_temp",
+                        "log_interval": 20,
+                        "warmup": 800,
+                        "apex": true,
+                        "evaluation": "acc",
+                        "stop_val_dec": 200,
+                        "lr_update": false,
+                        "weight_decay": 0.001
+                },
+
+        "template_config":{
+                "is_none": true,
+                "template_count": 10,
+                "tksize": [5, 5]
+        },
+
+        "dataset_config_set":
+        {
+                "apparel_16":
+                {
+                        "dataset_name": "apparel_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "baby_16":
+                {
+                        "dataset_name": "baby_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "books_16":
+                {
+                        "dataset_name": "books_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "camera_16":
+                {
+                        "dataset_name": "camera_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "dvd_16":
+                {
+                        "dataset_name": "dvd_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "electronic_16":
+                {
+                        "dataset_name": "electronic_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "health_16":
+                {
+                        "dataset_name": "health_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "imdb_16":
+                {
+                        "dataset_name": "imdb_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "kitchen_16":
+                {
+                        "dataset_name": "kitchen_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "magazine_16":
+                {
+                        "dataset_name": "magazine_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "mr_16":
+                {
+                        "dataset_name": "mr_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "music_16":
+                {
+                        "dataset_name": "music_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "software_16":
+                {
+                        "dataset_name": "software_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "sport_16":
+                {
+                        "dataset_name": "sport_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "toys_16":
+                {
+                        "dataset_name": "toys_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                },
+                "video_16":
+                {
+                        "dataset_name": "video_16",
+                        "batch_size": 5,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 3000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                }
+        },
+
+        "model_config_set":
+        {
+                "0":
+                {
+                        "model_name": "mlscm",
+                        "nlayer": 10,
+                        "nhead": 1,
+                        "dropp": 0.5
+                }
+        },
+
+        "criterion_config_set":
+        {
+                "apparel_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "baby_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "books_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "camera_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "dvd_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "electronic_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "health_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "imdb_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "kitchen_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "magazine_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "mr_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "music_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "software_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "sport_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "toys_16_0":
+                {
+                        "criterion_name": "classification"
+                },
+                "video_16_0":
+                {
+                        "criterion_name": "classification"
+                }
+        }
+}

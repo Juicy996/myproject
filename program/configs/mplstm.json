@@ -1,0 +1,70 @@
+{
+        "hyper_params": {
+                        "lr": 0.01,
+                        "embed_dim": 1024,
+                        "hidden_dim": 1024, 
+                        "optimizer": "lamb",
+                        "cuda": "cuda:1",
+                        "tensorlog_path1": "tensor_logs/enwik8_temp",
+                        "log_interval": 100,
+                        "warmup": 800,
+                        "apex": false,
+                        "evaluation": "loss",
+                        "stop_val_dec": 100,
+                        "weight_decay": 0.000,
+                        "lr_update": true,
+                        "nni": false,
+                        "max_epoch": 60,
+
+
+                        "not_used": 123
+                },
+
+        "template_config_set":{
+                "is_none": true,
+                "t1":
+                {
+                        "template_count": 10,
+                        "nrow": 304,
+                        "ncol": 304
+                }
+        },
+
+        "dataset_config_set":
+        {
+                "enwik8":
+                {
+                        "batch_size": 10,
+                        "pretrained": "char",
+                        "pretrained1": "glove.840B.300d-char",
+                        "pretrained1": "bert-base-uncased",
+                        "pretrained1": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "nvocab": 999999999,
+                        "nvocab_src": 999999999,
+                        "nvocab_tgt": 999999999,
+                        "model_idx": ["1"],
+                        "seq_len": 4096
+                }
+        },
+
+        "model_config_set":
+        {
+                "1":
+                {
+                        "model_name": "pgram",
+                        "nlayer": 1,
+                        "nhead": 1,
+                        "dropp": 0.2
+                }
+        },
+        "criterion_config_set":
+        {
+                "enwik8_1":
+                {
+                        "hidden_dim": 1024, 
+                        "criterion_name": "ced_config"
+                }
+        }
+}

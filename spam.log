@@ -1,0 +1,1764 @@
+{'hyper_params#lr': 0.001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'lamb', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 20, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 8000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "lamb",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 20,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 8000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.01, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'lamb', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.001, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 10, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 4000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.01,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "lamb",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.001,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 10,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 4000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.01, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'lamb', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 1e-05, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 30, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 4000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.01,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "lamb",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 1e-05,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 30,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 4000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'lamb', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0001, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 20, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 7000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "lamb",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0001,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 20,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 7000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.0001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'lamb', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 1e-05, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 5, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 6000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.0001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "lamb",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 1e-05,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 5,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 6000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.0001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.001, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 25, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 4000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.0001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.001,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 25,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 4000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.01, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.001, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 20, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 4000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.01,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.001,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 20,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 4000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.01, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 1e-05, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 15, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 5000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.01,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 1e-05,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 15,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 5000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.0001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 1e-05, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 25, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 6000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.0001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 1e-05,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 25,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 6000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.01, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 1e-05, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 30, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 8000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.01,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 1e-05,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 30,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 8000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.01, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'lamb', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0001, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 5, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 6000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.01,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "lamb",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0001,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 5,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 6000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'lamb', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.001, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 25, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 6000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "lamb",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.001,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 25,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 6000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'lamb', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 15, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 4000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "lamb",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 15,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 4000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 15, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 5000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 15,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 5000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.01, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 1e-05, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 5, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 6000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.01,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 1e-05,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 5,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 6000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.0001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'lamb', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 1e-05, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 20, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 6000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.0001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "lamb",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 1e-05,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 20,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 6000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0001, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 15, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 7000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0001,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 15,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 7000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.0001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.001, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 15, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 4000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.0001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.001,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 15,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 4000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'lamb', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0001, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 5, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 8000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "lamb",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0001,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 5,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 8000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.01, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 20, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 7000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.01,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 20,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 7000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.0001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0001, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 25, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 7000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.0001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0001,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 25,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 7000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.0001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.001, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 10, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 7000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.0001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.001,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 10,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 7000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 10, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 4000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 10,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 4000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.0001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 1e-05, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 10, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 4000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.0001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 1e-05,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 10,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 4000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0001, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 25, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 7000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0001,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 25,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 7000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.0001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0001, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 15, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 7000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.0001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0001,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 15,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 7000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.001, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 25, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 5000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.001,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 25,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 5000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.0001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.0001, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 30, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 7000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.0001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.0001,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 30,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 7000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.001, 'hyper_params#apex': False, 'hyper_params#lr_update': True, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 15, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 8000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.001,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 15,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 8000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+{'hyper_params#lr': 0.001, 'hyper_params#embed_dim': 300, 'hyper_params#hidden_dim': 300, 'hyper_params#optimizer': 'adam', 'hyper_params#cuda': 2, 'hyper_params#log_interval': 40, 'hyper_params#warmup': 0, 'hyper_params#evaluation': 'acc', 'hyper_params#stop_val_dec': 50, 'hyper_params#weight_decay': 0.001, 'hyper_params#apex': False, 'hyper_params#lr_update': False, 'template_config_set#is_none': True, 'template_config_set#304_304#template_count': 10, 'template_config_set#304_304#tksize': [5, 5], 'template_config_set#304_304#nrow': 304, 'template_config_set#304_304#ncow': 304, 'dataset_config_set#mr_16#dataset_name': 'mr_16', 'dataset_config_set#mr_16#batch_size': 25, 'dataset_config_set#mr_16#pretrained': 'glove.6B.300d', 'dataset_config_set#mr_16#embedding_trainable': False, 'dataset_config_set#mr_16#nvocab': 4000, 'dataset_config_set#mr_16#nvocab_src': 20000, 'dataset_config_set#mr_16#nvocab_tgt': 20000, 'dataset_config_set#mr_16#model_idx': [1], 'dataset_config_set#mr_16#elmo': False, 'model_config_set#1#model_name': 'mindicator', 'model_config_set#1#nlayer': 2, 'model_config_set#1#nhead': 1, 'model_config_set#1#dropp': 0.5, 'criterion_config_set#mr_16_1#criterion_name': 'classification'}
+{
+  "hyper_params": {
+    "lr": 0.001,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.001,
+    "apex": false,
+    "lr_update": false
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "mr_16",
+      "batch_size": 25,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 4000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "mindicator",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification"
+    }
+  }
+}
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'
+'NoneType' object has no attribute 'add_histogram'

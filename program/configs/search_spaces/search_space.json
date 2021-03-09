@@ -1,0 +1,38 @@
+{
+  "hyper_params#lr": {"_type":"uniform", "_value": [0.0001, 0.01]},
+  "hyper_params#embed_dim": {"_type":"choice", "_value": [300]},
+  "hyper_params#hidden_dim": {"_type":"choice", "_value": [300]},
+  "hyper_params#optimizer": {"_type":"choice", "_value": ["adam"]},
+  "hyper_params#cuda": {"_type":"choice", "_value": [2]},
+  "hyper_params#log_interval": {"_type":"choice", "_value": [40]},
+  "hyper_params#warmup": {"_type":"choice", "_value": [0]},
+  "hyper_params#evaluation": {"_type":"choice", "_value": ["acc"]},
+  "hyper_params#stop_val_dec": {"_type":"choice", "_value": [50]},
+  "hyper_params#weight_decay": {"_type":"uniform", "_value": [0.00, 0.001]},
+  "hyper_params#apex": {"_type":"choice", "_value": [false]},
+  "hyper_params#lr_update": {"_type":"choice", "_value": [true, false]},
+
+  "template_config_set#is_none":{"_type":"choice","_value":[true]},
+  "template_config_set#304_304#template_count":{"_type":"choice","_value":[10]},
+  "template_config_set#304_304#tksize":{"_type":"choice","_value":[[5, 5]]},
+  "template_config_set#304_304#nrow":{"_type":"choice","_value":[304]},
+  "template_config_set#304_304#ncow":{"_type":"choice","_value":[304]},
+
+  "dataset_config_set#mr_16#dataset_name":{"_type":"choice","_value":["sst2_np"]},
+  "dataset_config_set#mr_16#batch_size":{"_type":"choice","_value":[20, 40, 80, 100, 200]},
+  "dataset_config_set#mr_16#pretrained":{"_type":"choice","_value":["glove.6B.300d"]},
+  "dataset_config_set#mr_16#embedding_trainable":{"_type":"choice","_value":[false]},
+  "dataset_config_set#mr_16#nvocab":{"_type":"choice","_value":[40000]},
+  "dataset_config_set#mr_16#nvocab_src":{"_type":"choice","_value":[20000]},
+  "dataset_config_set#mr_16#nvocab_tgt":{"_type":"choice","_value":[20000]},
+  "dataset_config_set#mr_16#model_idx":{"_type":"choice","_value":[[1]]},
+  "dataset_config_set#mr_16#elmo":{"_type":"choice","_value":[false]},
+
+  "model_config_set#1#model_name":{"_type":"choice","_value":["fcsr"]},
+  "model_config_set#1#nlayer":{"_type":"choice","_value":[2]},
+  "model_config_set#1#nhead":{"_type":"choice","_value":[1]},
+  "model_config_set#1#dropp":{"_type":"choice","_value":[0.5]},
+
+  "criterion_config_set#mr_16_1#criterion_name":{"_type":"choice","_value":["classification"]},
+  "criterion_config_set#mr_16_1#lbd":{"_type":"choice","_value":[0.5]}
+}

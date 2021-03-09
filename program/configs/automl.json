@@ -1,0 +1,57 @@
+{
+  "hyper_params": {
+    "lr": 0.005814769056001014,
+    "embed_dim": 300,
+    "hidden_dim": 300,
+    "optimizer": "adam",
+    "cuda": 2,
+    "log_interval": 40,
+    "warmup": 0,
+    "evaluation": "acc",
+    "stop_val_dec": 50,
+    "weight_decay": 0.00034683629356083623,
+    "apex": false,
+    "lr_update": true
+  },
+  "template_config_set": {
+    "is_none": true,
+    "304_304": {
+      "template_count": 10,
+      "tksize": [
+        5,
+        5
+      ],
+      "nrow": 304,
+      "ncow": 304
+    }
+  },
+  "dataset_config_set": {
+    "mr_16": {
+      "dataset_name": "sst2_np",
+      "batch_size": 20,
+      "pretrained": "glove.6B.300d",
+      "embedding_trainable": false,
+      "nvocab": 40000,
+      "nvocab_src": 20000,
+      "nvocab_tgt": 20000,
+      "model_idx": [
+        1
+      ],
+      "elmo": false
+    }
+  },
+  "model_config_set": {
+    "1": {
+      "model_name": "fcsr",
+      "nlayer": 2,
+      "nhead": 1,
+      "dropp": 0.5
+    }
+  },
+  "criterion_config_set": {
+    "mr_16_1": {
+      "criterion_name": "classification",
+      "lbd": 0.5
+    }
+  }
+}

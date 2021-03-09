@@ -1,0 +1,50 @@
+{
+        "hyper_params": {
+                        "lr": 0.0001,
+                        "embed_dim": 300,
+                        "hidden_dim": 300, 
+                        "optimizer": "adam",
+                        "lr": 2e-3,
+                        "cuda": 2,
+                        "tensorlog_path": null,
+                        "tensorlog_path": "tensor_logs/enwik8_temp",
+                        "log_interval": 20,
+                        "warmup": 800,
+                        "apex": true,
+                        "evaluation": "loss",
+                        "stop_val_dec": 200
+                },
+        "template_config":{
+                "is_none": false,
+                "template_count": 10,
+                "tksize": [5, 5]
+        },
+
+        "dataset_config_set":[
+                {
+                        "dataset_name": "dbpedia", 
+                        "batch_size": 300,
+                        "seq_len": 1024,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000
+                }
+        ],
+
+        "model_config_set":[
+                {
+                        "model_name": "sslstm",
+                        "nlayer": 3,
+                        "nhead": 1,
+                        "dropp": 0.5
+                }
+        ],
+
+        "criterion_config_set":[
+                {
+                        "criterion_name": "classification"
+                }
+        ]
+}

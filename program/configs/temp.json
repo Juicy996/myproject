@@ -1,0 +1,70 @@
+{
+        "hyper_params": {
+                        "lr": 0.001,
+                        "embed_dim": 300,
+                        "hidden_dim": 300, 
+                        "optimizer": "lamb",
+                        "cuda": "cuda:0",
+                        "tensorlog_path1": "tensor_logs/enwik8_temp",
+                        "log_interval": 100,
+                        "warmup": 800,
+                        "apex": false,
+                        "evaluation": "loss",
+                        "stop_val_dec": 100,
+                        "weight_decay": 0.000,
+                        "lr_update": false,
+                        "nni": false,
+                        "max_epoch": 60,
+
+
+                        "not_used": 123
+                },
+
+        "template_config_set":{
+                "is_none": true,
+                "t1":
+                {
+                        "template_count": 10,
+                        "nrow": 304,
+                        "ncol": 304
+                }
+        },
+
+        "dataset_config_set":
+        {
+                "csnlim":
+                {
+                        "batch_size": 256,
+                        "pretrained1": "char",
+                        "pretrained1": "glove.840B.300d-char",
+                        "pretrained1": "bert-base-uncased",
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": true,
+                        "nvocab": 999999999,
+                        "nvocab_src": 999999999,
+                        "nvocab_tgt": 999999999,
+                        "model_idx": ["1"],
+                        "seq_len": 2048
+                }
+        },
+
+        "model_config_set":
+        {
+                "1":
+                {
+                        "model_name": "mcnn",
+                        "nlayer": 1,
+                        "nhead": 1,
+                        "dropp": 0.2
+                }
+        },
+        "criterion_config_set":
+        {
+                "csnlim_1":
+                {
+                        "hidden_dim": 300, 
+                        "criterion_name": "cem_config"
+                }
+        }
+}

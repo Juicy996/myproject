@@ -1,0 +1,21 @@
+authorName: default
+experimentName: example_mnist_pytorch
+trialConcurrency: 1
+maxExecDuration: 12h
+maxTrialNum: 120
+#choice: local, remote, pai
+trainingServicePlatform: local
+searchSpacePath: search_space.json
+#choice: true, false
+useAnnotation: false
+tuner:
+  #choice: TPE, Random, Anneal, Evolution, BatchTuner, MetisTuner, GPTuner
+  #SMAC (SMAC should be installed through nnictl)
+  builtinTunerName: TPE
+  classArgs:
+    #choice: maximize, minimize
+    optimize_mode: maximize
+trial:
+  command: python automl.py
+  codeDir: .
+  gpuNum: 1

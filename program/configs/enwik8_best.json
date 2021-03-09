@@ -1,0 +1,35 @@
+{
+        "hyper_params": {
+                        "lr": 0.0001,
+                        "embed_dim": 1024,
+                        "hidden_dim":1024,
+                        "optimizer": "adam"
+                },
+        "template_config":{
+                "is_none": true,
+                "template_count": 10,
+                "tksize": 5
+        },
+
+        "dataset_config_set":[
+                {
+                        "dataset_name": "enwik8",
+                        "batch_size": 20,
+                        "seq_len": 512
+                }
+        ],
+
+        "model_config_set":[
+                {
+                        "model_name": "rnn_attn_gram",
+                        "nlayer": 4,
+                        "nhead": 4
+                }
+        ],
+
+        "criterion_config_set":[
+                {
+                        "criterion_name": "netgram"
+                }
+        ]
+}

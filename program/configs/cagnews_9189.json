@@ -1,0 +1,58 @@
+{
+        "hyper_params": {
+                        "seed": 985415177,
+                        "lr": 0.001,
+                        "embed_dim": 300,
+                        "hidden_dim": 300, 
+                        "optimizer": "lamb",
+                        "cuda": 2,
+                        "tensorlog_path": "tensor_logs/enwik8_temp",
+                        "log_interval": 20,
+                        "warmup": 800,
+                        "apex": true,
+                        "evaluation": "acc",
+                        "stop_val_dec": 200
+                },
+
+        "template_config":{
+                "is_none": true,
+                "template_count": 10,
+                "tksize": [5, 5]
+        },
+
+        "dataset_config_set":
+        {
+                "cagnews":
+                {
+                        "dataset_name": "cagnews",
+                        "batch_size": 200,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": true,
+                        "force": false,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 30000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [0]
+                }
+        },
+
+        "model_config_set":
+        {
+                "0":
+                {
+                        "model_name": "rect_cnn",
+                        "nlayer": 7,
+                        "nhead": 1,
+                        "dropp": 0.5
+                }
+        },
+
+        "criterion_config_set":
+        {
+                "cagnews_0":
+                {
+                        "criterion_name": "classification"
+                }
+        }
+}

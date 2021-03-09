@@ -1,0 +1,71 @@
+{
+        "hyper_params": {
+                        "lr": 0.01,
+                        "embed_dim": 768,
+                        "hidden_dim": 300, 
+                        "optimizer": "adam",
+                        "cuda": 2,
+                        "tensorlog_path1": "tensor_logs/enwik8_temp",
+                        "log_interval": 20,
+                        "warmup": 0,
+                        "apex": false,
+                        "evaluation": "acc",
+                        "stop_val_dec": 50,
+                        "weight_decay": 0.0002,
+                        "lr_update": true,
+                        "nni": false,
+                        "max_epoch": 100,
+
+
+                        "not_used": 123
+                },
+
+        "template_config_set":{
+                "is_none": false,
+                "10_304_304":
+                {
+                        "template_count": 10,
+                        "tksize": [5, 5],
+                        "nrow": 304,
+                        "ncol": 304
+                }
+        },
+
+        "dataset_config_set":
+        {
+                "unnamed":
+                {
+                        "dataset_name": "cagnews",
+                        "batch_size": 400,
+                        "pretrained1": "character",
+                        "pretrained1": "glove.840B.300d-char",
+                        "pretrained": "bert-base-uncased",
+                        "pretrained1": "glove.6B.300d",
+                        "embedding_trainable": false,
+                        "force": false,
+                        "nvocab": 999999999,
+                        "nvocab_src": 999999999,
+                        "nvocab_tgt": 999999999,
+                        "model_idx": [1]
+                }
+        },
+
+        "model_config_set":
+        {
+                "1":
+                {
+                        "model_name": "b_class",
+                        "nlayer": 7,
+                        "nhead": 1,
+                        "dropp": 0.5
+                }
+        },
+        "criterion_config_set":
+        {
+                "unnamed_1":
+                {
+                        "hidden_dim": 300, 
+                        "criterion_name": "triple_order"
+                }
+        }
+}

@@ -1,0 +1,70 @@
+{
+        "hyper_params": {
+                        "lr": 0.001,
+                        "embed_dim": 300,
+                        "hidden_dim": 300, 
+                        "optimizer": "adam",
+                        "cuda": 1,
+                        "tensorlog_path": "tensor_logs/enwik8_temp",
+                        "log_interval": 20,
+                        "warmup": 0,
+                        "apex": false,
+                        "evaluation": "acc",
+                        "stop_val_dec": 50,
+                        "weight_decay": 0.00000,
+                        "lr_update": true,
+                        "nni": false,
+                        "max_epoch": 40,
+
+
+                        "not_used": 123
+                },
+
+        "template_config_set":{
+                "is_none": false,
+                "304_304":
+                {
+                        "template_count": 3,
+                        "tksize": [5, 5],
+                        "nrow": 300,
+                        "ncol": 300
+                }
+        },
+
+        "dataset_config_set":
+        {
+                "mr_16":
+                {
+                        "dataset_name": "random_classes",
+                        "batch_size": 512,
+                        "pretrained": "glove.6B.300d",
+                        "embedding_trainable": false,
+                        "force": true,
+                        "not_used": "glove.6B.300d",
+                        "nvocab": 40000,
+                        "nvocab_src": 20000,
+                        "nvocab_tgt": 20000,
+                        "model_idx": [1],
+                        "elmo": false,
+                        "character": false
+                }
+        },
+
+        "model_config_set":
+        {
+                "1":
+                {
+                        "model_name": "sync_test",
+                        "nlayer": 10,
+                        "nhead": 1,
+                        "dropp": 0.5
+                }
+        },
+        "criterion_config_set":
+        {
+                "mr_16_1":
+                {
+                        "criterion_name": "classification"
+                }
+        }
+}
